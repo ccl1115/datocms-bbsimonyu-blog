@@ -9,7 +9,8 @@ export default function CoverImage({ title, responsiveImage, slug }) {
         ...responsiveImage,
         alt: `Cover Image for ${title}`,
       }}
-      className={cn('shadow-small', {
+      pictureClassName="object-cover"
+      className={cn('shadow-small h-80', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
     />
